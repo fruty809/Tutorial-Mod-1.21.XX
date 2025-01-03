@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "tutorial-mod",
+	"version": "${version}",
+	"name": "Tutorial Mod",
+	"description": "First Mode from Fruty",
+	"authors": [
+		"Fruty"
+	],
+	"contact": {
+		"homepage": "https://github.com/fruty809",
+		"sources": "https://github.com/fruty809"
+	},
+	"license": "MIT",
+	"icon": "assets/tutorial-mod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.fruty.tutorialmod.TutorialMod"
+		],
+		"fabric-datagen": [
+			"net.fruty.tutorialmod.TutorialModDataGenerator"
+		],
+		"client": [
+			"net.fruty.tutorialmod.TutorialModClient"
+		]
+	},
+	"mixins": [
+		"tutorial-mod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
